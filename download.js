@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 const fs = require('fs-extra');
 const path = require('path');
 
-const baseUrl = 'https://seantheme.com/color-admin/admin/assets/plugins/ionicons/dist/ionicons/svg/';
+const baseUrl = 'URL_TO_DOWNLOAD';
 
 async function downloadFile(fileUrl, outputPath) {
     try {
@@ -63,7 +63,7 @@ scrapeAndDownloadFiles();
 // const path = require('path');
 // const { URL } = require('url');
 
-// const baseUrl = 'https://fkkbihu.or.id/fksidiq/templates/admin_v41/template/assets/plugins/nvd3/build/';
+// const baseUrl = 'URL_TO_DOWNLOAD';
 // const outputDir = path.resolve(__dirname, 'downloads');
 
 // async function downloadFilesFromDirectory(baseUrl, directoryPath, outputDir) {
