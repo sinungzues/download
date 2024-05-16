@@ -23,7 +23,10 @@ base_url = 'https://blabla.com/assets/img/user/user-'
 # Direktori tempat menyimpan gambar
 download_dir = 'downloaded_images'
 
-# Loop untuk mengunduh gambar dari product-1.jpg sampai product-17.jpg
-for i in range(1, 18):
-    url = f"{base_url}{i}.jpg" #sesuaikan format file yang akan di download
-    download_image(url, download_dir)
+# Loop untuk mengunduh gambar
+i = 1
+while True:
+    url = f"{base_url}{i}.jpg" #Sesuaikan ekstensi file, disini ingin mendownload file dengan ekstensi jpg
+    if not download_image(url, download_dir):
+        break  # Keluar dari loop jika gambar tidak ditemukan
+    i += 1
